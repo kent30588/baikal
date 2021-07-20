@@ -1,119 +1,131 @@
 .header {
-	height: 940px;
-	background: url(../images/bg-home.jpg) center center/ cover no-repeat;
-	color: #ffffff;
-	font-family: $roboto;
-	position: relative;
+    height: 940px;
+    background: url(../images/bg-home.jpg) center center/ cover no-repeat;
+    color: #ffffff;
+    font-family: $roboto;
+    position: relative;
 }
 
 a {
-	text-decoration: none;
-	color: inherit;
+    text-decoration: none;
+    color: inherit;
 }
 
 .navigation {
-	padding: 13px 0 0 0;
-	display: flex;
-	align-items: center;
-
-	&__line {
-		height: 1px;
-		background: #C4C4C4;
-		opacity: 0.3;
-		margin-top: 14px;
-	}
+    padding: 13px 0 0 0;
+    display: flex;
+    align-items: center;
+    &__line {
+        height: 1px;
+        background: #C4C4C4;
+        opacity: 0.3;
+        margin-top: 14px;
+    }
 }
 
 .navigetion {
-	&__logo {
-		display: flex;
-		margin-right: 179px;
-	}
-
-	&__logo-img {
-		width: 54px;
-		height: 54px;
-		margin-right: 20px;
-		font-family: $serif;
-		font-weight: 700;
-
-		span {
-			font-family: $roboto;
-			font-weight: 400;
-		}
-	}
-
-	&__logo-text {
-		font-size: 20px;
-		line-height: 26px;
-		font-weight: 700;
-	}
-
-	&__contact {
-		margin-right: 33px;
-
-		img {
-			margin-right: 13px;
-		}
-	}
-
-	&__item {
-		font-size: 18px;
-		font-weight: 700;
-		&:hover{
-
-		}
-	}
-
-	&__email {
-		margin-right: 45px;
-
-		img {
-			margin-right: 13px;
-		}
-	}
+    &__logo {
+        display: flex;
+        margin-right: 179px;
+    }
+    &__logo-img {
+        width: 54px;
+        height: 54px;
+        margin-right: 20px;
+        font-family: $serif;
+        font-weight: 700;
+        span {
+            font-family: $roboto;
+            font-weight: 400;
+        }
+    }
+    &__logo-text {
+        font-size: 20px;
+        line-height: 26px;
+        font-weight: 700;
+    }
+    &__contact {
+        margin-right: 33px;
+        img {
+            margin-right: 13px;
+        }
+    }
+    &__item {
+        font-size: 18px;
+        font-weight: 700;
+        &:hover {}
+    }
+    &__email {
+        margin-right: 45px;
+        img {
+            margin-right: 13px;
+        }
+    }
 }
 
 .main {
-	padding: 33px 0 33px 0;
-	&__nav{
-		margin: 0;
-		list-style: none;
-	}
-	&__item {
-		margin-right: 32px;
-		font-size: 16px;
-		line-height: 19px;
-	}
-
-	&__title {
-		width: 600px;
-		margin-top: 106px;
-		font-size: 90px;
-		line-height: 130px;
-		font-family: $serif;
-		font-weight: 700;
-	}
-
-	&__dscr {
-		margin-top: 8px;
-		font-size: 20px;
-		line-height: 140%;
-	}
-
-	&__down {
-		display: block;
-		width: 40px;
-		height: 40px;
-		margin: 0 auto;
-		border: 1px solid #ffffff;
-		border-radius: 50%;
-		text-align: center;
-		padding: 7px 0 11px 0;
-		position: absolute;
-		bottom: 0;
-		left: 50%;
-		transform: translateX(-50%);
-		margin-bottom: 33px;
-	}
+    padding: 33px 0 33px 0;
+    &__nav {
+        display: flex;
+        margin: 0;
+        list-style: none;
+        padding: 0;
+    }
+    &__dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    &__item {
+        margin-right: 32px;
+        font-size: 16px;
+        line-height: 19px;
+        cursor: pointer;
+    }
+    &__menu {
+        display: none;
+        position: absolute;
+        width: 212px;
+        min-height: 100px;
+        line-height: 240%;
+        padding: 10px 0 10px 14px;
+        background: #FFFFFF;
+        color: #0050B2;
+        a {
+            display: block;
+        }
+        a:hover {
+            color: red;
+        }
+    }
+    &__dropdown:hover &__menu {
+        display: block;
+    }
+    &__title {
+        width: 600px;
+        margin-top: 106px;
+        font-size: 90px;
+        line-height: 130px;
+        font-family: $serif;
+        font-weight: 700;
+    }
+    &__dscr {
+        margin-top: 8px;
+        font-size: 20px;
+        line-height: 140%;
+    }
+    &__down {
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin: 0 auto;
+        border: 1px solid #ffffff;
+        border-radius: 50%;
+        text-align: center;
+        padding: 7px 0 11px 0;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 33px;
+    }
 }
