@@ -1,0 +1,28 @@
+.tour{
+	padding: 64px 0;
+	min-height: 792px;
+	&__wrapper{
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 32px;
+	}
+	&__card{
+		width: 256px;
+		height: 200px;
+		border: 1px solid #D9D9DE;
+		border-radius: 6px;
+		&:hover {
+			color: red;
+		}
+	}
+	&__img{
+		width: 100%;
+	}
+	&__title{
+		font-family: $roboto;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 19px;
+		margin: 13px 0 16px 19px;
+	}
+}
