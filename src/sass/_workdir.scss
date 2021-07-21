@@ -1,0 +1,31 @@
+.workdir {
+    width: 100%;
+    background: rgba(#70CF29, 0.07);
+    min-height: 582px;
+    padding: 44px 0 80px 0;
+    &__title {
+        font-family: $serif;
+        font-size: 30px;
+        line-height: 130%;
+        font-weight: 700;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    &__group {
+        display: grid;
+        column-gap: 33px;
+        row-gap: 37px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, auto);
+    }
+    &__card {}
+    &__img {}
+    &__text {
+        font-size: 16px;
+        line-height: 130%;
+        font-family: $roboto;
+        font-weight: 400;
+        columns: #333333;
+        margin-top: 16px;
+    }
+}
