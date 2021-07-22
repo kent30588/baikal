@@ -114,18 +114,23 @@ a {
         line-height: 140%;
     }
     &__down {
-        display: block;
         width: 40px;
         height: 40px;
-        margin: 0 auto;
         border: 1px solid #ffffff;
         border-radius: 50%;
         text-align: center;
-        padding: 7px 0 11px 0;
+        padding: 9px 0 9px 0;
         position: absolute;
         bottom: 0;
         left: 50%;
         transform: translateX(-50%);
         margin-bottom: 33px;
+		  content: url('../images/down_w.svg');
     }
+	 &__down:hover{
+		 transition: 0.5s;
+		 border: 1px solid rgba(#fff, .5);
+		 background-color: rgba(#fff, .5);
+		 content: url('../images/down_b.svg');
+	 }
 }

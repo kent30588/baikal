@@ -1,0 +1,37 @@
+.history{
+	padding: 70px 0 85px 0;
+	&__title{
+		font-size: 30px;
+		font-family: $serif;
+		font-weight: 700;
+		text-align: center;
+	}
+	&__map{
+		margin-top: 31px;
+	}
+	&__report{
+		margin-top: 76px;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__report-text{
+		margin-right: 32px;
+	}
+	&__report-title{
+		font-size: 30px;
+		line-height: 40px;
+		font-weight: 700;
+	}
+	&__report-primary{
+		font-size: 18px;
+		line-height: 140%;
+		color: #333333;
+		margin-bottom: 40px;
+	}
+	&__report-descr{
+		font-size: 16px;
+		line-height: 19px;
+		color: #76767A;
+	}
+
+}

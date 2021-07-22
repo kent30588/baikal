@@ -23,8 +23,9 @@
 		margin-top: 94px;
 	}
 	&:hover{
+		transition: 0.3s;
 		background:rgba(#FFFFFF, .5);
-		border: 1px solid #FFFFFF;
+		border: 1px solid rgba(#FFFFFF, .5);
 		color: black;
 	}
 }
