@@ -1,0 +1,58 @@
+.gallery{
+	background-color: rgba(#3FA9F5, .07);
+	padding: 37px 0 61px 0;
+	min-height: 766px;
+	&__title{
+		display: inline-block;
+		margin-right: 634px;
+		font-family: $serif;
+		font-weight: 700;
+		font-style: 30px;
+		line-height: 39px;
+	}
+	&__link{
+		color: #0050B2;
+		font-size: 16px;
+		line-height: 19px;
+		&:hover {
+			color: red;
+		}
+	}
+	.slick-slide{
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(2, auto);
+		gap: 32px;
+	}
+
+	&__carousel{
+		margin-top: 59px;
+		position: relative;
+		width: 1120px;
+	}
+	.slick-slade{
+		width: 100%;
+	}
+	.slick-prev,
+	.slick-next {
+		position: absolute;
+		border: none;
+		background-color: transparent;
+		top: -100px;
+		right: 60px;
+		padding: 0;
+		margin: 0;
+		border-radius: 50%;
+		&:hover{
+			background-color: rgba(88, 133, 245, 0.5);
+		}
+
+		img {
+			width: 44px;
+			height: 44px;
+		}
+	}
+		.slick-next {
+			right: 0;
+		}
+}

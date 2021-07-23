@@ -1,0 +1,65 @@
+.relax{
+	padding: 80px 0 85px 0;
+	min-height: 1049px;
+	&__title{
+		font-family: $serif;
+		font-weight: 700;
+		font-size: 44px;
+		line-height: 52px;
+		text-align: center;
+	}
+	&__wrapper{
+		margin-top: 45px;
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 54px;
+		border-bottom: 1px solid #D9D9DE;
+		
+	}
+	&__image{
+		min-width: 352px;
+		min-height: 479px;
+		margin-right: 32px;
+		position: relative;
+		img{
+			//display: block;
+			//width: 100%;
+		}
+	}
+	&__item-top{
+		position: absolute;
+		z-index: 0;
+		top: 0;
+		left: 0;
+	}
+	&__item-bottom{
+		position: absolute;
+		bottom: 60px;
+		right: 0;
+		//border: 3px solid #ffffff;
+		z-index: 3333;
+	}
+	&__number{
+		display: flex;
+		justify-content: space-between;
+	}
+	&__card{
+		margin: 41px 47px 0 0;
+		margin-right: 47px;
+		&:last-child{
+			margin-right: 0;
+		}
+		span {
+			font-family: $serif;
+			color: #64BD22;
+			font-size: 58px;
+			font-weight: 700;
+			min-width: 128px;
+		}
+		h4{
+			color: #000000;
+			font-size: 20px;
+			font-weight: 500;
+		}
+	}
+}
