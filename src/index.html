@@ -508,6 +508,66 @@
         </div>
       </div>
     </section>
+    <!-- /.relax -->
+    <section class="booking">
+      <div class="container">
+        <h2 class="booking__title">Забронируйте отдых на Байкале</h2>
+        <form class="booking__form" action="#">
+          <div class="booking__wrapper">
+            <input name="name" required placeholder="Ваше имя" type="text" />
+            <input name="phone" required placeholder="Телефон" type="number" />
+            <input name="email" required placeholder="E-mail" type="email" />
+            <input name="place" placeholder="Местность Байкала" type="text" />
+            <input
+              name="number_big"
+              required
+              placeholder="Количество взрослых"
+              type="number"
+            />
+            <input
+              name="number_children"
+              required
+              placeholder="Количество детей, их возраст"
+              type="number"
+            />
+            <input
+              name="arrival_date"
+              required
+              placeholder="Дата заезда"
+              type="date"
+            />
+            <!--<input placeholder="Комментарий" type="text" />-->
+            <textarea
+              class="booking__wrapper-comment"
+              name="comment"
+              placeholder="Комментарий"
+            ></textarea>
+            <input
+              name="departure_date"
+              required
+              placeholder="Дата отъезда"
+              type="date"
+            />
+          </div>
+          <button class="booking__button">Отправить заявку</button>
+          <a
+            class="booking__assend"
+            href="https://yandex.ru/images/search?text=ссылка%20на%20согласие%20на%20обработку%20персональных%20данных&stype=image&lr=213&source=wiz"
+            target="_blank"
+            ><input
+              id="cb1"
+              class="booking__assend-input"
+              name="checkbox"
+              required
+              type="checkbox"
+            />
+            <label for="cb1"></label>
+            Согласие на обработку персональных данных</a
+          >
+        </form>
+      </div>
+    </section>
+    <!-- /.booking -->
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
