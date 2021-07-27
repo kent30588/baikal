@@ -1,0 +1,383 @@
+@media (max-width: 1160px){	
+	.container{
+		padding: 0 32px;
+	}
+	.header{
+		position: relative;
+		.navigetion {
+			&__logo{
+				margin-right: 10px;
+				&-img{
+					margin-right: 10px;
+				}
+				&-text{
+					font-size: 15px;
+				}
+			}
+		}
+	}
+	.tour{
+		min-height: 1224px;
+		&__wrapper{
+			grid-template-columns: repeat(3, 1fr);
+			gap: 31px;
+		}
+		&__card{
+			width: 290px;
+			height: 250px;
+		}
+	}
+	.offer{
+		&__card{
+			width: auto;
+		}
+		&__card-big{
+			width: auto;
+		}
+	}
+	.history{
+		&__map{
+			iframe{
+				width: 100%;
+			}
+		}
+	}
+	.gallery{
+		&__carousel{
+			width: 100%;
+		}
+		&__title{
+			margin-right: 480px;
+		}
+		.slick-slide img {
+			width: 100%;
+		}
+	}
+	.relax{
+		&__card{
+			margin-right: 23px;
+			span{
+				font-size: 46px;
+			}
+		}
+	}
+}
+@media (max-width: 992px){
+	.container {
+		padding: 0 32px;
+	}
+
+	.header {
+		.navigetion {
+			&__contact {
+				display: none;
+			}
+
+			&__email {
+				display: none;
+			}
+
+			&__logo {
+				margin-right: 60px;
+			}
+		}
+	}
+	.tour {
+		min-height: 1742px;
+
+		&__wrapper {
+			grid-template-columns: repeat(2, 1fr);
+			gap: 31px;
+		}
+		&__card {
+			margin: 0 auto;
+			width: 317px;
+			height: 250px;
+		}
+	}
+
+	.carousel {
+		&__inner {
+			width: 500px;
+		}
+	}
+
+	.workdir {
+		min-height: 845px;
+
+		&__group {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+
+	.offer {
+		min-height: 3000px;
+		&__wrapper {
+			grid-template-columns: repeat(2, 1fr);
+		}
+		&__card {
+			margin: 0 auto;
+			width: 320px;
+			height: 320px;
+
+			img {
+				width: 100%;
+			}
+		}
+
+		&__card-big {
+			width: 670px;
+			height: 670px;
+			grid-column: 1/3;
+			grid-row: 3/5;
+		}
+	}
+
+	.history {
+		&__map {
+			iframe {
+				width: 100%;
+			}
+		}
+
+		&__report {
+			flex-wrap: wrap;
+		}
+
+		&__video {
+			margin: 0 auto;
+			margin-top: 20px;
+		}
+	}
+
+	.gallery {
+		&__carousel {
+			width: 100%;
+		}
+
+		&__title {
+			margin-right: 230px;
+		}
+
+		.slick-slide {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		.slick-slide img {
+			width: 320px;
+			height: 233px;
+
+			&:nth-child(3) {
+				display: none;
+			}
+
+			&:nth-child(5) {
+				display: none;
+			}
+		}
+	}
+
+	.relax {
+		padding: 50px 0 50px 0;
+
+		&__card {
+			margin-right: 23px;
+		}
+
+		&__image {
+			display: none;
+		}
+
+		&__card {
+			span {
+				font-size: 30px;
+			}
+
+			h4 {
+				font-size: 14px;
+			}
+		}
+	}
+
+	.booking {
+		a {
+			margin: 0 102px 0 0;
+			display: flex;
+		}
+
+		min-height: 692px;
+
+		&__form {
+			width: 100%;
+		}
+
+		&__wrapper {
+			grid-template-columns: repeat(4, 1fr);
+			grid-template-rows: repeat(7, auto);
+			grid-template-areas:
+				"name name name name"
+				"phone phone phone phone"
+				"email email email email"
+				"baikal baikal baikal baikal"
+				"col-vz col-vz rjk-det rjk-det"
+				"date1 comment2 comment2 comment2"
+				"date2 comment2 comment2 comment2";
+
+			&-name {
+				grid-area: name;
+			}
+
+			&-phone {
+				grid-area: phone;
+			}
+
+			&-email {
+				grid-area: email;
+			}
+
+			&-baikal {
+				grid-area: baikal;
+			}
+
+			&-col-vz {
+				grid-area: col-vz;
+			}
+
+			&-rjk-det {
+				grid-area: rjk-det;
+			}
+
+			&-comment2 {
+				grid-area: comment2;
+			}
+
+			&-date1 {
+				grid-area: date1;
+			}
+
+			&-date2 {
+				grid-area: date2;
+			}
+		}
+
+		&__save {
+			margin-top: 30px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		&__button {
+			margin: 0;
+		}
+
+		&__assend {
+			display: flex;
+		}
+
+		label {
+			left: -6px;
+			top: 16px;
+		}
+	}
+
+	.footer {
+		&__top {
+			flex-wrap: wrap;
+			justify-content: space-around;
+			text-align: center;
+		}
+
+		&__top-active {
+			display: block;
+		}
+
+		&__list {
+			padding: 0 20px;
+			font-size: 18px;
+		}
+
+		.navigetion__item {
+			color: #fff;
+		}
+
+		&__bottom {
+			flex-wrap: wrap;
+			justify-content: space-around;
+			text-align: center;
+
+			&-list {
+				margin-bottom: 20px;
+
+				&:nth-child(4) {
+					text-align: center;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 736px) {
+	.container {
+		padding: 0 16px;
+	}
+	.navigation {
+		&__logo-text{
+			font-size: 18px;
+		}
+	}
+	.main{
+		&__nav{
+			display: none;
+		}
+		&__title{
+			width: 100%;
+			font-size: 73px;
+		}
+	}
+	.tour{
+		min-height: auto;
+		&__card {
+			width: 246px;
+			height: 199px;
+		}
+	}
+	.carousel{
+		display: none;
+	}
+	.offer{
+		min-height: auto;
+		&__wrapper{
+			grid-template-rows: auto;
+		}
+		&__card{
+			width: auto;
+			height: auto;
+		}
+	}
+	.history__video{
+		    width: 550px;
+		    margin: 0 auto;
+	}
+	.gallery{
+		&__title{
+			margin-right: 123px;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 576px) {
+	
+}
+@media (max-width: 320px) {
+}
