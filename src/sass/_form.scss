@@ -45,6 +45,9 @@
             grid-row: 3/5;
         }
     }
+	 &__save{
+		 display: flex;
+	 }
     &__button {
         width: 297px;
         height: 60px;
@@ -75,12 +78,13 @@
         width: 26px;
         height: 28px;
         position: absolute;
-        left: -2px;
-        top: 2px;
+        left: -33px;
+        top: 9px;
         border: 2px solid #76767A;
         border-radius: 2px;
     }
     input[type=checkbox] {
+		 display: none;
         width: 26px;
         height: 26px;
         opacity: 0;

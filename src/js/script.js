@@ -20,4 +20,12 @@ $(document).ready(function() {
         }
     });
 
+		$('.navigetion__burger').on('click', function () {
+			$('.dropdown__menu').removeClass('dropdown__menu--close');
+		});
+
+		$('.dropdown__menu-close').on('click', function () {
+			$('.dropdown__menu').addClass('dropdown__menu--close');
+		});
+
 });

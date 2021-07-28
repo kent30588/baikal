@@ -26,7 +26,7 @@
     <header class="header" id="up">
       <div class="container">
         <nav class="navigation">
-          <a class="navigetion__logo" href="#">
+          <a class="navigetion__logo" href="index.html">
             <img
               class="navigetion__logo-img"
               src="images/Group.png"
@@ -48,20 +48,90 @@
               >9260700593@mail.ru</a
             >
           </div>
-          <button class="button">Оставить заявку</button>
-          <div class="navigation__burger">
+          <button class="button navigetion__button">Оставить заявку</button>
+          <button class="navigetion__burger">
             <img src="images/burger.svg" alt="" />
-          </div>
+          </button>
         </nav>
       </div>
       <div class="navigation__line"></div>
       <section class="main">
+        <div class="dropdown__menu dropdown__menu--close">
+          <button class="dropdown__menu-close">
+            <img src="images/close.svg" alt="close" />
+          </button>
+          <ul class="dropdown__menu-nav">
+            <h4 class="dropdown__menu-title">Бронирование</h4>
+            <li class="dropdown__menu-item">
+              <a class="dropdown__menu-link" href="hotel.html"
+                >Отели и базы отдыха</a
+              >
+            </li>
+            <li class="dropdown__menu-item">
+              <a class="dropdown__menu-link" href="#">Теплоходы и катера</a>
+            </li>
+            <li class="dropdown__menu-item">
+              <a class="dropdown__menu-link" href="#">Транспортные услуги</a>
+            </li>
+            <h4 class="dropdown__menu-title">Экскурсии</h4>
+            <li class="dropdown__menu-item">
+              <a class="dropdown__menu-link" href="#">Экскурсии и туры</a>
+            </li>
+            <li class="dropdown__menu-item">
+              <a class="dropdown__menu-link" href="#">Экстрим туры</a>
+            </li>
+            <h4 class="dropdown__menu-title">Туры на Байкал</h4>
+            <li class="dropdown__menu-item">
+              <a class="dropdown__menu-link" href="#">Туры Зима-Весна</a>
+            </li>
+            <li class="dropdown__menu-item">
+              <a class="dropdown__menu-link" href="#">Туры Лето-Осень</a>
+            </li>
+            <li class="dropdown__menu-item">
+              <a class="dropdown__menu-link" href="#">Туры охоты и рыбалки</a>
+            </li>
+            <h4 class="dropdown__menu-title">О Байкале</h4>
+            <li class="dropdown__menu-item">
+              <a class="dropdown__menu-link" href="#">Карта Байкала</a>
+            </li>
+            <li class="dropdown__menu-item">
+              <a class="dropdown__menu-link" href="#">Достопримечательности</a>
+            </li>
+            <li class="dropdown__menu-item">
+              <a class="dropdown__menu-link" href="#">Полезная информация</a>
+            </li>
+            <h4 class="dropdown__menu-title" href="">О нас</h4>
+            <li class="dropdown__menu-item">
+              <a class="dropdown__menu-link" href="#">Контакты</a>
+            </li>
+            <li class="dropdown__menu-item">
+              <a class="dropdown__menu-link" href="#">Агентствам</a>
+            </li>
+          </ul>
+          <div class="dropdown__menu-contact">
+            <img src="images/phone_dropdaun.svg" alt="phone" />
+            <a class="dropdown__menu-contact--phone" href="tel:+89260700593"
+              >8-926-070-05-93
+            </a>
+          </div>
+          <div class="dropdown__menu-email">
+            <img src="images/email_dropdaun.svg" alt="email" />
+            <a
+              class="dropdown__menu-email--mail"
+              href="mailto:9260700593@mail.ru"
+              >9260700593@mail.ru</a
+            >
+          </div>
+          <button class="booking__button dropdown__menu-button">
+            Отправить заявку
+          </button>
+        </div>
         <div class="container">
           <ul class="main__nav">
             <li class="main__dropdown">
               <batton class="main__item" href="">Бронирование</batton>
               <div class="main__menu">
-                <a href="#">Отели и базы отдыха</a>
+                <a href="hotel.html">Отели и базы отдыха</a>
                 <a href="#">Теплоходы и катера</a>
                 <a href="#">Транспортные услуги</a>
               </div>
@@ -197,7 +267,7 @@
           </div>
           <div class="workdir__card">
             <img
-              class="workdir__img"
+              class="workdir__item"
               src="images/workdir/group_2.svg"
               alt="img"
             />
@@ -207,7 +277,7 @@
           </div>
           <div class="workdir__card">
             <img
-              class="workdir__img"
+              class="workdir__item"
               src="images/workdir/group_3.svg"
               alt="img"
             />
@@ -217,7 +287,7 @@
           </div>
           <div class="workdir__card">
             <img
-              class="workdir__img"
+              class="workdir__item"
               src="images/workdir/group_4.svg"
               alt="img"
             />
@@ -227,7 +297,7 @@
           </div>
           <div class="workdir__card">
             <img
-              class="workdir__img"
+              class="workdir__item"
               src="images/workdir/group_5.svg"
               alt="img"
             />
@@ -237,7 +307,7 @@
           </div>
           <div class="workdir__card">
             <img
-              class="workdir__img"
+              class="workdir__item"
               src="images/workdir/group_6.svg"
               alt="img"
             />
@@ -247,7 +317,7 @@
           </div>
           <div class="workdir__card">
             <img
-              class="workdir__img"
+              class="workdir__item"
               src="images/workdir/group_7.svg"
               alt="img"
             />
@@ -257,7 +327,7 @@
           </div>
           <div class="workdir__card">
             <img
-              class="workdir__img"
+              class="workdir__item"
               src="images/workdir/group_8.svg"
               alt="img"
             />
@@ -561,7 +631,6 @@
               placeholder="Дата заезда"
               type="date"
             />
-            <!--<input placeholder="Комментарий" type="text" />-->
             <textarea
               class="booking__wrapper-coment booking__wrapper-comment2"
               name="comment"

@@ -276,7 +276,7 @@
 		}
 
 		label {
-			left: -6px;
+			left: -39px;
 			top: 16px;
 		}
 	}
@@ -320,9 +320,15 @@
 	.container {
 		padding: 0 16px;
 	}
-	.navigation {
+	.navigetion {
 		&__logo-text{
 			font-size: 18px;
+		}
+		&__burger{
+			display: block;
+		}
+		&__button{
+			display: none;
 		}
 	}
 	.main{
@@ -355,29 +361,169 @@
 		}
 	}
 	.history__video{
-		    width: 550px;
-		    margin: 0 auto;
+			 iframe{
+				 width: 550px;
+				 margin: 0 auto;
+			 }
 	}
 	.gallery{
+		min-height: auto;
 		&__title{
 			margin-right: 123px;
 		}
+		.slick-slide img {
+			width: 255px;
+			height: 185px;
+		}
+	}
+	.booking{
+		a{
+			margin: 0;
+		}
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 576px) {
-	
-}
-@media (max-width: 320px) {
+	.header{
+		height: 480px;
+	}
+	.navigetion{
+		&__logo{
+			img{
+				width: 39px;
+				height: 39px;
+			}
+		}
+		&__logo-text{
+			font-size: 14px;
+			line-height: 18px;
+		}
+	}
+	.main{
+		padding: 0;
+		&__title{
+			margin-top: 38px;
+			font-size: 40px;
+			line-height: 60px;
+		}
+		&__dscr{
+			font-size: 14px;
+		}
+		.button__main{
+			display: block;
+			margin: 0 auto;
+			margin-top: 37px;
+			height: 48px;
+			padding: 14px 50px;
+		}
+	}
+	.tour{
+		&__wrapper{
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+	.workdir{
+		&__group{
+			grid-template-columns: repeat(1, 1fr);
+		}
+		&__item{
+			display: block;
+			margin: 0 auto;
+		}
+		&__text{
+			text-align: center;
+		}
+	}
+	.offer{
+		min-height: 1845px;
+		&__title{
+			text-align: center;
+		}
+		&__wrapper{
+			display: block;
+		}
+		&__card{
+			margin-bottom: 10px;
+			width: 288px;
+			height: 288px;
+		}
+	}
+	.history{
+		&__map{
+			iframe{
+				height: 360px;
+			}
+		}
+	}
+	.history__video {
+		iframe {
+			width: 288px;
+			margin: 0 auto;
+		}
+	}
+	.gallery{
+		.slick-slide{
+			grid-template-columns: repeat(1, 1fr);
+			img{
+				&:nth-child(2){
+					display: none;
+				}
+				&:nth-child(4) {
+					display: none;
+				}
+				&:nth-child(1) {
+					display: none;
+				}
+			}
+		}
+	}
+	.relax{
+		padding: 25px 0 25px 0;
+		&__title{
+			font-size: 30px;
+			line-height: 40px;
+		}
+		&__number{
+			display: block;
+			margin-top: 15px;
+		}
+		&__card{
+			margin: 0;
+			text-align: center;
+		}
+	}
+	.booking{
+		height: 100%;
+		padding: 25px 0 25px 0;
+		&__save{
+			display: block;
+		}
+		&__wrapper{
+			 display: grid;
+			 grid-template-columns: repeat(2, 1fr);
+			 grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 180px;
+			 gap: 16px;
+			grid-template-areas: 
+			"name name"
+			"phone phone"
+			"email email"
+			"baikal baikal"
+			"col-vz col-vz"
+			"rjk-det rjk-det"
+			"date1 date2"
+			"comment2 comment2";
+		}
+		input[type=checkbox]{
+			width: 0;
+			height: 0;
+		}
+		a{
+			display: block;
+			margin: 20px 0 0 0;
+			text-align: center;
+		}
+		label {
+			left: 23px;
+			top: 12px;
+		}
+	}
 }

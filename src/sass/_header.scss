@@ -25,6 +25,11 @@ a {
 }
 
 .navigetion {
+		 &__burger {
+		 	display: none;
+			background:inherit;
+			border: none;
+		 }
     &__logo {
         display: flex;
         margin-right: 179px;
@@ -64,7 +69,7 @@ a {
 }
 
 .main {
-    padding: 33px 0 33px 0;
+    padding: 0px 0 33px 0;
     &__nav {
         display: flex;
         margin: 0;
@@ -133,4 +138,58 @@ a {
 		 background-color: rgba(#fff, .5);
 		 content: url('../images/down_b.svg');
 	 }
+}
+
+.dropdown__menu{
+	max-width:320px;
+	width: 100%;
+	position: absolute;
+	top: 85px;
+	right: 0;
+	background-color: #fff;
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+	padding: 10px 20px;
+	color: #333333;
+	transition: 5s all;
+	&.dropdown__menu--close{
+		display: none;
+	}
+	&-close{
+		position: absolute;
+		top: 9px;
+		right: 16px;
+		border: none;
+		img{
+			height: 19px;
+		}
+	}
+	&-nav{
+		margin-top: 15px;
+		padding: 0;
+	}
+	&-title {
+		font-size: 20px;
+		font-weight: 500;
+		color: #333333;
+		text-transform: uppercase;
+		margin-bottom: 15px;
+		margin-top: 15px;
+	}
+	&-item{
+		list-style: none;
+		margin-bottom: 10px;
+	}
+	&-link{
+		color: #0050B2;
+	}
+	&-contact{
+		margin-bottom: 10px;
+	}
+	&-contact--phone,
+	&-email--mail{
+		color: rgb(102, 98, 98);
+	}
+	&-email{
+		margin-bottom: 15px;
+	}
 }
