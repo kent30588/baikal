@@ -315,6 +315,14 @@
 			}
 		}
 	}
+	.modal {
+		&__assend {
+			display: block;
+		}
+		&__button{
+			margin-top: 15px;
+		}
+	}
 }
 @media (max-width: 736px) {
 	.container {
@@ -525,5 +533,7 @@
 			left: 23px;
 			top: 12px;
 		}
+	}
+	.modal{
 	}
 }

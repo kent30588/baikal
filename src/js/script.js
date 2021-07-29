@@ -27,5 +27,13 @@ $(document).ready(function() {
 		$('.dropdown__menu-close').on('click', function () {
 			$('.dropdown__menu').addClass('dropdown__menu--close');
 		});
+	
+		$('.button').on('click', function () {
+			$('.overlay').removeClass('overlay--close');
+		});
+
+		$('.modal__close').on('click', function () {
+			$('.overlay').addClass('overlay--close');
+		});
 
 });
