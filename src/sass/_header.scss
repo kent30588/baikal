@@ -1,11 +1,10 @@
 .header {
     height: 940px;
-    background: url(../images/bg-home.jpg) center center/ cover no-repeat;
+    background: url(../images/bg-home.jpg) fixed no-repeat;
     color: #ffffff;
     font-family: $roboto;
     position: relative;
 }
-
 a {
     text-decoration: none;
     color: inherit;
@@ -69,7 +68,8 @@ a {
 }
 
 .main {
-    padding: 0px 0 33px 0;
+    padding: 20px 0 20px 0;
+	 
     &__nav {
         display: flex;
         margin: 0;
@@ -113,6 +113,7 @@ a {
         font-family: $serif;
         font-weight: 700;
     }
+
     &__dscr {
         margin-top: 8px;
         font-size: 20px;
@@ -138,7 +139,7 @@ a {
 		 background-color: rgba(#fff, .5);
 		 content: url('../images/down_b.svg');
 	 }
-}
+	}
 
 .dropdown__menu{
 	max-width:320px;
@@ -150,7 +151,6 @@ a {
 	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
 	padding: 10px 20px;
 	color: #333333;
-	transition: 5s all;
 	&.dropdown__menu--close{
 		display: none;
 	}

@@ -1,0 +1,15 @@
+.primary{
+	padding-top: 22px;
+	height: 496px;
+	background:url(../images/tourist_center/rectangle.jpg)center no-repeat;
+	background-size: cover;
+	&__title{
+		margin-top: 170px;
+		text-align: center;
+		font-size: 44px;
+		line-height: 58px;
+		color: #FFFFFF;
+		font-family: $serif;
+		font-weight: 700;
+	}
+}

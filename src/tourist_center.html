@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>Экскурсии и туры</title>
+  </head>
+
+  <body>
+    <header class="header--touristcenter" id="up">
+      <div class="container">
+        <nav class="navigation">
+          <a class="navigetion__logo" href="index.html">
+            <img
+              class="navigetion__logo-img"
+              src="images/Group.png"
+              alt="logo"
+            />
+            <div class="navigetion__logo-text">
+              Байкальский отдых <br /><span>Турагентство</span>
+            </div>
+          </a>
+          <div class="navigetion__contact">
+            <img src="images/phone_dropdaun.svg" alt="phone" />
+            <a class="navigetion__item" href="tel:+89260700593"
+              >8-926-070-05-93
+            </a>
+          </div>
+          <div class="navigetion__email">
+            <img src="images/email_dropdaun.svg" alt="email" />
+            <a class="navigetion__item" href="mailto:9260700593@mail.ru"
+              >9260700593@mail.ru</a
+            >
+          </div>
+          <button class="button navigetion__button button__touristcenter">
+            Оставить заявку
+          </button>
+          <button class="navigetion__burger">
+            <img src="images/burger.svg" alt="" />
+          </button>
+        </nav>
+      </div>
+      <div class="navigation__line"></div>
+      <section class="main main--touristcenter">
+        <div class="dropdown__menu dropdown__menu--close">
+          <button class="dropdown__menu-close">
+            <img src="images/close.svg" alt="close" />
+          </button>
+          <ul class="dropdown__menu-nav">
+            <h4 class="dropdown__menu-title">Бронирование</h4>
+            <li class="dropdown__menu-item">
+              <a class="dropdown__menu-link" href="hotel.html"
+                >Отели и базы отдыха</a
+              >
+            </li>
+            <li class="dropdown__menu-item">
+              <a class="dropdown__menu-link" href="#">Теплоходы и катера</a>
+            </li>
+            <li class="dropdown__menu-item">
+              <a class="dropdown__menu-link" href="#">Транспортные услуги</a>
+            </li>
+            <h4 class="dropdown__menu-title">Экскурсии</h4>
+            <li class="dropdown__menu-item">
+              <a class="dropdown__menu-link" href="#">Экскурсии и туры</a>
+            </li>
+            <li class="dropdown__menu-item">
+              <a class="dropdown__menu-link" href="#">Экстрим туры</a>
+            </li>
+            <h4 class="dropdown__menu-title">Туры на Байкал</h4>
+            <li class="dropdown__menu-item">
+              <a class="dropdown__menu-link" href="#">Туры Зима-Весна</a>
+            </li>
+            <li class="dropdown__menu-item">
+              <a class="dropdown__menu-link" href="#">Туры Лето-Осень</a>
+            </li>
+            <li class="dropdown__menu-item">
+              <a class="dropdown__menu-link" href="#">Туры охоты и рыбалки</a>
+            </li>
+            <h4 class="dropdown__menu-title">О Байкале</h4>
+            <li class="dropdown__menu-item">
+              <a class="dropdown__menu-link" href="#">Карта Байкала</a>
+            </li>
+            <li class="dropdown__menu-item">
+              <a class="dropdown__menu-link" href="#">Достопримечательности</a>
+            </li>
+            <li class="dropdown__menu-item">
+              <a class="dropdown__menu-link" href="#">Полезная информация</a>
+            </li>
+            <h4 class="dropdown__menu-title" href="">О нас</h4>
+            <li class="dropdown__menu-item">
+              <a class="dropdown__menu-link" href="#">Контакты</a>
+            </li>
+            <li class="dropdown__menu-item">
+              <a class="dropdown__menu-link" href="#">Агентствам</a>
+            </li>
+          </ul>
+          <div class="dropdown__menu-contact">
+            <img src="images/phone_dropdaun.svg" alt="phone" />
+            <a class="dropdown__menu-contact--phone" href="tel:+89260700593"
+              >8-926-070-05-93
+            </a>
+          </div>
+          <div class="dropdown__menu-email">
+            <img src="images/email_dropdaun.svg" alt="email" />
+            <a
+              class="dropdown__menu-email--mail"
+              href="mailto:9260700593@mail.ru"
+              >9260700593@mail.ru</a
+            >
+          </div>
+          <button class="booking__button dropdown__menu-button">
+            Отправить заявку
+          </button>
+        </div>
+        <div class="container">
+          <ul class="main__nav">
+            <li class="main__dropdown">
+              <batton class="main__item" href="">Бронирование</batton>
+              <div class="main__menu">
+                <a href="hotel.html">Отели и базы отдыха</a>
+                <a href="#">Теплоходы и катера</a>
+                <a href="#">Транспортные услуги</a>
+              </div>
+            </li>
+            <li class="main__dropdown">
+              <batton class="main__item" href="">Экскурсии</batton>
+              <div class="main__menu">
+                <a href="#">Экскурсии и туры</a>
+                <a href="#">Экстрим туры</a>
+              </div>
+            </li>
+            <li class="main__dropdown">
+              <batton class="main__item" href="">Туры на Байкал</batton>
+              <div class="main__menu">
+                <a href="#">Туры Зима-Весна</a>
+                <a href="#">Туры Лето-Осень</a>
+                <a href="#">Туры охоты и рыбалки</a>
+              </div>
+            </li>
+            <li class="main__dropdown">
+              <batton class="main__item" href="">О Байкале</batton>
+              <div class="main__menu">
+                <a href="#">Карта Байкала</a>
+                <a href="#">Достопримечательности</a>
+                <a href="#">Полезная информация</a>
+              </div>
+            </li>
+            <li class="main__dropdown">
+              <batton class="main__item" href="">О нас</batton>
+              <div class="main__menu">
+                <a href="#">Контакты</a>
+                <a href="#">Агентствам</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </header>
+
+    <main class="primary">
+      <div class="container">
+        <div class="breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="index.html">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">Турбазы</a>
+            </li>
+          </ul>
+        </div>
+        <h1 class="primary__title">Базы отдыха на озере Байкале</h1>
+      </div>
+    </main>
+    <section class="booking">
+      <div class="container">
+        <h2 class="booking__title">Забронируйте отдых на Байкале</h2>
+        <form class="booking__form" action="#" id="consultation-form">
+          <div class="booking__wrapper">
+            <input
+              class="booking__wrapper-name"
+              name="name"
+              required
+              placeholder="Ваше имя"
+              type="text"
+            />
+            <input
+              class="booking__wrapper-phone"
+              name="phone"
+              required
+              placeholder="Телефон"
+              type="number"
+            />
+            <input
+              class="booking__wrapper-email"
+              name="email"
+              required
+              placeholder="E-mail"
+              type="email"
+            />
+            <input
+              class="booking__wrapper-baikal"
+              name="place"
+              placeholder="Местность Байкала"
+              type="text"
+            />
+            <input
+              class="booking__wrapper-col-vz"
+              name="number_big"
+              required
+              placeholder="Количество взрослых"
+              type="number"
+            />
+            <input
+              class="booking__wrapper-rjk-det"
+              name="number_children"
+              required
+              placeholder="Количество детей, их возраст"
+              type="number"
+            />
+            <input
+              class="booking__wrapper-date1"
+              name="arrival_date"
+              required
+              placeholder="Дата заезда"
+              type="date"
+            />
+            <textarea
+              class="booking__wrapper-coment booking__wrapper-comment2"
+              name="comment"
+              placeholder="Комментарий"
+            ></textarea>
+            <input
+              class="booking__wrapper-date2"
+              name="departure_date"
+              required
+              placeholder="Дата отъезда"
+              type="date"
+            />
+          </div>
+          <div class="booking__save">
+            <button class="booking__button">Отправить заявку</button>
+            <a
+              class="booking__assend"
+              href="https://yandex.ru/images/search?text=ссылка%20на%20согласие%20на%20обработку%20персональных%20данных&stype=image&lr=213&source=wiz"
+              target="_blank"
+            >
+              <input
+                id="cb1"
+                class="booking__assend-input"
+                name="checkbox"
+                required
+                type="checkbox"
+              />
+              <label for="cb1"></label> Согласие на обработку <br />
+              персональных данных
+            </a>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- /.booking -->
+    <div class="overlay overlay--close">
+      <div class="modal">
+        <div class="modal__close">
+          <img src="images/close.svg" alt="close" />
+        </div>
+        <div class="modal__title">Мы вам перезвоним!</div>
+        <form action="#" class="modal__form">
+          <input type="name" placeholder="Ваше имя" />
+          <input type="phone" placeholder="Телефон" />
+          <input type="text" placeholder="Удобное время звонка" />
+          <a
+            class="booking__assend modal__assend"
+            href="https://yandex.ru/images/search?text=ссылка%20на%20согласие%20на%20обработку%20персональных%20данных&stype=image&lr=213&source=wiz"
+            target="_blank"
+          >
+            <input
+              id="cb2"
+              class="booking__assend-input modal__assend-input"
+              name="checkbox"
+              required
+              type="checkbox"
+            />
+            <label for="cb2"></label> Согласие на обработку <br />
+            персональных данных
+          </a>
+          <button class="booking__button dropdown__menu-button modal__button">
+            Отправить заявку
+          </button>
+        </form>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <ul class="footer__list">
+            <li class="footer__item"><a href="#">Бронирование</a></li>
+            <li class="footer__item"><a href="#">Отели и базы отдыха</a></li>
+            <li class="footer__item"><a href="#">Теплоходы и катера</a></li>
+            <li class="footer__item"><a href="#">Транспортные услуги</a></li>
+          </ul>
+          <ul class="footer__list">
+            <li class="footer__item"><a href="#">Экскурсии</a></li>
+            <li class="footer__item"><a href="#">Экскурсии и туры</a></li>
+            <li class="footer__item"><a href="#">Экстрим туры</a></li>
+          </ul>
+          <ul class="footer__list">
+            <li class="footer__item"><a href="#">Туры на Байкал</a></li>
+            <li class="footer__item"><a href="#">Туры Зима-Весна</a></li>
+            <li class="footer__item"><a href="#">Туры Лето-Осень</a></li>
+            <li class="footer__item"><a href="#">Туры охоты и рыбалки</a></li>
+          </ul>
+          <ul class="footer__list">
+            <li class="footer__item"><a href="#">О Байкале</a></li>
+            <li class="footer__item"><a href="#">Карта Байкала</a></li>
+            <li class="footer__item"><a href="#">Достопримечательности</a></li>
+            <li class="footer__item"><a href="#">Полезная информация</a></li>
+          </ul>
+          <ul class="footer__list">
+            <li class="footer__item"><a href="#">О нас</a></li>
+            <li class="footer__item"><a href="#">Контакты</a></li>
+            <li class="footer__item"><a href="#">Агентствам</a></li>
+          </ul>
+        </div>
+        <hr />
+        <div class="footer__bottom">
+          <div class="footer__bottom-list">
+            <h3>Турагентство «Байкальский отдых»</h3>
+            <span>© 2021. Все права защищены</span>
+          </div>
+          <div class="footer__bottom-list">
+            <h3>Заказ туров и бронирование:</h3>
+            <a href="tel:89243541540">тел. 8-924-3-541-540</a><br />
+            <a href="mailto:baikalholiday@mail.ru"
+              >e-mail: baikalholiday@mail.ru</a
+            >
+          </div>
+          <div class="footer__bottom-list">
+            <h3>Адрес:</h3>
+            <h4>г. Улан-Удэ, ул.Гражданская, 20, отель «Рестон», 1 этаж</h4>
+          </div>
+          <div class="footer__bottom-list">
+            <a href="#">Политика конфиденциальности</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <a class="pageup" href="#up">
+      <img src="images/chevron.svg" alt="up" />
+    </a>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
