@@ -1,0 +1,56 @@
+.location{
+	padding: 80px 0;
+	&__title{
+		font-size: 20px;
+		line-height: 24px;
+		text-align: center;
+		a{
+			color: #0050B2;
+		}
+	}
+	&__card{
+		margin-top: 30px;
+		img{
+			width: 352px;
+		}
+	}
+	&__header{
+		font-size: 24px;
+		line-height: 28px;
+		font-weight: 700;
+		margin: 10px 0 15px 0;
+	}
+	&__text{
+		color: #333333;
+		font-size: 16px;
+		line-height: 23px;
+	}
+	&__btn{
+		margin-top: 23px;
+	}
+	&__list{
+		height: 250px;
+		margin-top: 10px;
+		list-style: none;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		overflow-y: auto;
+		scroll-snap-type: y mandatory;
+	}
+	&__list-title{
+		scroll-snap-align: start;
+		color: #76767A;
+		margin-bottom: 15px;
+		text-transform: uppercase;
+		font-size: 20px;
+		line-height: 23px;
+		font-weight: 500;
+	}
+	&__item{
+		color: #0050B2;
+		font-size: 16px;
+		line-height: 23px;
+		margin-bottom: 5px;
+	}
+}

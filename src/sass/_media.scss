@@ -2,6 +2,7 @@
 	.container{
 		padding: 0 32px;
 	}
+	.header--touristcenter,
 	.header{
 		position: relative;
 		.navigetion {
@@ -61,12 +62,21 @@
 			}
 		}
 	}
+	.location{
+		&__header {
+			margin: 0 0 10px 0 ;
+		}
+		&__text{
+			font-size: 14px;
+			line-height: 21px;
+		}
+	}
 }
 @media (max-width: 992px){
 	.container {
 		padding: 0 32px;
 	}
-
+	.header--touristcenter,
 	.header {
 		.navigetion {
 			&__contact {
@@ -321,6 +331,11 @@
 		}
 		&__button{
 			margin-top: 15px;
+		}
+	}
+	.location{
+		&__list{
+			display: none;
 		}
 	}
 }
